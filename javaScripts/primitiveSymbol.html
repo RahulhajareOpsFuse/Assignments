@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        Primitive Types: Symbol
+    </div>
+    <script>
+        //Symbol is a built-in object whose constructor returns a symbol
+        const symb=Symbol('my identifier')
+        console.log('Symbol is :',symb);
+        const symb1=Symbol('my identifier')
+        console.log(symb==symb1);//false
+        const o1=Symbol('identifier for o1');
+        const o2=Symbol('identifier for o1');
+        myObj={};
+        myObj[o1]='Rahul';
+        myObj[o2]='Rahim';
+        myObj['name']='Good boy';
+        console.log(myObj[o1]);
+        console.log(myObj[o2]);
+        //Symbols are ignored in for loop
+        for(key in myObj)
+        {
+            console.log(key);
+        }
+        //
+        console.log(JSON.stringify(myObj));//{"name":"Good boy"}
+    </script>
+</body>
+</html>

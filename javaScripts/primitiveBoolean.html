@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        Primitive Data Types: Boolean
+    </div>
+    <script>
+        //Boolean object is an object wrapper for a boolean value it returns true or false.
+       
+        var a=Boolean(0);
+        console.log(a);//false
+        var a=Boolean(-0);//false
+        var a=Boolean(NaN);//false
+        var a=Boolean(null);//false
+        console.log(Boolean("rahul"));//true
+        console.log(Boolean(""));//false
+        console.log(Boolean(1));//true
+
+        var bNull=new Boolean(null);
+        console.log(bNull);//Boolean False
+        console.log(Boolean('Rah Ul'));
+        console.log(Boolean({}))//true
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        BigInt
+    </div>
+    <script>
+        let n1=Number.MAX_SAFE_INTEGER;
+        console.log(n1);/* 9007199254740991 */
+        console.log(n1++);
+        console.log(n1++);
+        console.log(n1++);
+        console.log(n1++);/* gives unexpected result */
+        let num=BigInt(9007199254740991)
+        console.log(num);
+
+        let no=10n;//to create  a bigint value
+        let no1=10;
+        console.log(no===no1);//false
+        if(no==no1)/*it returns true*/
+        {
+            console.log("true")
+        }
+        else
+        {
+            console.log("false")
+        }
+        //big int support all the operators and A BigInt value behaves like a Number value
+        console.log(10n+32n);/* 42n */
+        console.log(10n*32n);/* 320n */
+        console.log(10n/32n);/* 0n */
+        console.log(10n-32n);/* -22n */
+
+        //constructor to create bigint value
+        var bigNum=BigInt(100);
+        console.log(bigNum);//100n
+
+
+
+    </script>
+    
+</body>
+</html>

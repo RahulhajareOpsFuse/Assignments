@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        Numbers in javascripts.
+    </div>
+    <script>
+        let pi=3.144213;
+        console.log(pi.toFixed(2)); /*3.14 if number is 3.146213 then it prints 3.15*/
+        console.log(pi.toPrecision(4));/* 3.144*/
+        let mill=1000000;
+        console.log(mill.toExponential());/* le+6 */
+        /* Number method*/
+        var pii=Number(pi);
+        console.log(pii.toFixed(2))
+        var num=Number("657");
+        if(num===657)/*true*/
+        {
+            console.log("Number is match");/*Number is matched*/
+        }
+
+        /* to check string*/
+        var temp="Rahul";
+        console.log(Number(temp)); /* Not a Number Value (NaN) */
+        var temp1="12 3";
+        console.log(Number(temp1)); /* NaN */
+
+        const result = Math.abs(0.2 - 0.3 + 0.1);
+        console.log(result);
+        /*property represents the difference between 1 and the smallest floating point number greater than 1.*/
+        console.log(result < Number.EPSILON);/*true*/
+
+       var x=3;
+       var y=4;
+       function myfun(x,y) {
+           if (x*y>Number.MAX_VALUE) {
+               return ('Process as infinity');
+           }
+           return(x*y);
+       }
+       /*static methods for numbers*/
+       var no=Number(121.3);
+       console.log(Number.isNaN(no));/*false*/
+       console.log(Number.isFinite(no));/*true*/
+       console.log(Number.isInteger(no));/*true*/
+       console.log(Number.isSafeInteger(no));/*true*/
+       console.log(Number.parseFloat(no));/* 121.3 */
+       console.log(Number.parseInt(no));/*121*/
+       /**/
+    </script>
+</body>
+</html>

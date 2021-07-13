@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //when receiving data from a web server  the data is always string.
+        //parse the data with json.parse(),and data becomes a javascript object.
+        const json = '{"Name":"Rahul", "count":42}';
+        const obj = JSON.parse(json);
+        console.log(obj.count);
+        document.write(obj.Name)
+
+        var rx_one = /^[\],:{}\s]*$/;
+        
+    </script>
+</body>
+</html>

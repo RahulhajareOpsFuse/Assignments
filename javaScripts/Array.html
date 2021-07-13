@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="array">
+        array :
+
+    </div>
+    <script>
+        let fruits=['apple','banana','orange','pear','kiwi','Dragonfruit']
+        console.log(fruits);
+        document.write(fruits);
+        console.log(fruits.length);//3
+        for( var name in fruits)
+        {
+            document.write(fruits[name]); //apple banana orange
+        }
+        //acces elements from array
+        document.writeln('\n'+fruits[fruits.length-1])
+        fruits.forEach(function(items,index,array){
+            console.log(items,index)
+        })
+        fruits.push('plum')
+        console.log(fruits)
+        fruits.pop()//it pop always last items.
+        fruits.shift();//removes first items.
+        console.log(fruits)
+        fruits.unshift('Strawberry')//add items in first position of an array
+        console.log(fruits)
+        console.log(fruits.indexOf('orange'))//return an index of an items
+        console.log(fruits.slice(3)) //
+        console.log(fruits.splice(1))//Removes the items from position
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="objects">
+        Objects in java scripts
+    </div>
+    <script>
+        var a={
+            fname:'Rahul',
+            lname:'Hajare',
+            age:'24',
+            living:{
+                city:'nagar',
+                country:'india'
+            },
+            email:'r@gmail.com',
+            favmovies:['Dhoom','Sholay','Hum'],
+            salary:function(){
+                return 25000;
+            }
+
+        }
+        //document.write(a);
+        console.log(a)
+        console.log(a.fname)
+        console.log(a.email)
+        document.write(a.fname+'\n')
+        document.write(a.favmovies)
+        document.writeln (a.salary())
+        document.write(a.living.city)
+    </script>
+</body>
+</html>
